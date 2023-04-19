@@ -103,3 +103,27 @@ devices["laptop"] // to look up value of laptop
 ```
 
 It has a constant lookup time, similar to sets.
+
+### Swift Functions
+
+Functions are compartmentalised sets of code. Functions are mainly used for reusable codes.
+
+```swift
+func printName(){
+	return "David Koh"
+} // defining the function
+
+printName() // functional call
+
+func printParamName(name: String){
+	return name
+} // defining function with parameters/arguments
+
+printParamName(name: "huan yin") // function call
+
+func add(firstNum: Int, to secondNum:Int) -> Int {
+	return firstNum + secondNum
+} // function with argument label and function signature
+
+add(firstNum: 2, to: 1)
+```
