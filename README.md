@@ -127,3 +127,28 @@ func add(firstNum: Int, to secondNum:Int) -> Int {
 
 add(firstNum: 2, to: 1)
 ```
+
+### Swift If/else statements
+
+If-else statements are mainly used in control flows of the codebase. They provide conditions on how the code should flow.
+
+```swift
+var isDarkModeOn = true
+// if isDarkModeOn == true
+if isDarkModeOn {
+	return "Dark Mode On"
+} else{
+	return "Light Mode attract bugs"
+}
+
+var highscore = 100
+if highscore > 500{
+	return "Good"
+} else if highscore > 250 {
+	return "Not Bad"
+} else {
+	return "Try better next time"
+}
+```
+
+Anything that can evaluates into a true or false can be a conditional. A == operator is used as a comparator between the value and the compared value to ascentain the truth of the logic.
