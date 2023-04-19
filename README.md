@@ -36,3 +36,20 @@ var smart: Bool = false // Type bool, true or false
 ```
 
 There are many other types in Swift, we can create our own types through classes or structs like `var david : Person = Person(named: "david")`
+
+Swift is also smart to do a **Type Inferencing** without explicitly stating its data typing. For example `var highscore = 0` it automatically knows the type is Integer.
+
+### Swift Variable & Constants
+
+Variables and Constants capture values and stores them in the codebase.
+
+Variables -> Values are mutable (they can be changed)
+
+Constants -> More Safety and Performant, but immutable (Values can't be changed)
+
+```swift
+var highscore = 0 // Variable
+highscore = 100 // Can Happen
+let name = "david" // Constant
+name = "huan yin" // Cannot Happen, IDE will show error
+```
