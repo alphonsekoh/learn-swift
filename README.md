@@ -70,3 +70,18 @@ ages[2] // shows the third index, 42 (first index is always 0)
 ages.append(99) // add 99 to the end of the array
 ages.insert(55, at:2) // add 55 at index 2 in the array
 ```
+
+### Swift Sets
+
+Sets are another data structures important for any programming languages. Similar to arrays that they store a list of values. However, they are unordered and also does not allow any duplicates. They are usually much more performant in speed by having faster data lookup time.
+
+```swift
+var ages = [12, 32, 23, 12] // Have 12 as duplicate
+// var agesSet: Set<Int> = [] can declare it this way
+var agesSet = Set(ages) // the order is gone and also will only have one 12
+
+agesSet.contains(12) // true
+ageSet.insert(101) // no append or at where cause unordered
+```
+
+Order is not guaranteed cause it has to conform to `Hashable` in order for any values to be inserted into a set. That is why Sets are faster as it looks up in constant time compared to arrays will check through the length of the array.
