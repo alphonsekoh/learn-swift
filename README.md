@@ -85,3 +85,21 @@ ageSet.insert(101) // no append or at where cause unordered
 ```
 
 Order is not guaranteed cause it has to conform to `Hashable` in order for any values to be inserted into a set. That is why Sets are faster as it looks up in constant time compared to arrays will check through the length of the array.
+
+### Swift Dictionary
+
+Dictionaries are an important data structure. Dictionary are a collection of data with labels with them, often called a key-value pair. `[key: value]`
+Like a real life dictionary where the word is the key and the definition being the value.
+
+```swift
+
+let devices: [String: String] = [
+	"phone": "iPhoneX",
+	"laptop": "Macbook Pro",
+	"tablet": "iPad Pro"
+] // dictionary are initialised something like this
+
+devices["laptop"] // to look up value of laptop
+```
+
+It has a constant lookup time, similar to sets.
