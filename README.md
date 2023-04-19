@@ -53,3 +53,20 @@ highscore = 100 // Can Happen
 let name = "david" // Constant
 name = "huan yin" // Cannot Happen, IDE will show error
 ```
+
+### Swift Array
+
+Arrays are an important data structure for any programming language.
+Arrays are like an list of values stored in a variable/constant. They are ordered, meaning their positions of the values are fixed.
+
+```swift
+var ages: [Int] = [] // Can declare it this way
+var ages = [21, 23, 42, 22] // or this way
+ages.count // will show length of array, it will show 4
+ages.first // show the first index of the array, 21
+ages.last // show last index, 22
+ages[2] // shows the third index, 42 (first index is always 0)
+
+ages.append(99) // add 99 to the end of the array
+ages.insert(55, at:2) // add 55 at index 2 in the array
+```
