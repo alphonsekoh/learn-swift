@@ -152,3 +152,54 @@ if highscore > 500{
 ```
 
 Anything that can evaluates into a true or false can be a conditional. A == operator is used as a comparator between the value and the compared value to ascentain the truth of the logic.
+
+### Swift Iterative Loops
+
+For this guide, I will only show For Loops as it would be the iterative loops that we would use 95% of the time
+
+```swift
+/**
+** For Loops
+**/
+let allStars = ["James", "Lebron", "Kobe", "Bryant"]
+
+for players in allStars{
+	print(players) // will print the entire list
+}
+
+for players in allStars where players == "Lebron"{
+	print(players) // will only print Lebron
+}
+
+for i in 0...3{ // For looping in ranges [0,3]
+	print(i)
+}
+
+for i in 0..<3 { // Looping in ranges [0,3)
+	print(i)
+}
+```
+
+### Swift Enums
+
+Enums are a set of constant values that are related with one another with type safety. Enums would improve on code readability as well.
+
+```swift
+/**
+** Enums
+*/
+
+enum Phone: String{
+	case iPhone11 = "this is my phone"
+	case iPhoneSE = "Phone is too small"
+	case pixel = "pixel is good"
+	case nokia "you're old school"
+}
+
+func getOpinion(on phone: Phone){
+	print(phone.rawValue)
+}
+
+getOpinion(on: .pixel)
+
+```
