@@ -155,7 +155,7 @@ Anything that can evaluates into a true or false can be a conditional. A == oper
 
 ### Swift Iterative Loops
 
-For this guide, I will only show For Loops as it would be the iterative loops that we would use 95% of the time
+For this guide, I will only show For Loops as it would be the iterative loops that we would use 95% of the time. There are while loops and repeat..while loops as well but those are not often used.
 
 ```swift
 /**
@@ -185,10 +185,6 @@ for i in 0..<3 { // Looping in ranges [0,3)
 Enums are a set of constant values that are related with one another with type safety. Enums would improve on code readability as well.
 
 ```swift
-/**
-** Enums
-*/
-
 enum Phone: String{
 	case iPhone11 = "this is my phone"
 	case iPhoneSE = "Phone is too small"
@@ -200,6 +196,32 @@ func getOpinion(on phone: Phone){
 	print(phone.rawValue)
 }
 
-getOpinion(on: .pixel)
+getOpinion(on: .pixel) // will return pixel is good
 
+```
+
+### Swift Switch-Case
+
+Switch statements behaves like if-else statement and oftenly paired with enums.
+It is a neater and cleaner way to write a if-else statement.
+
+```swift
+ let ELORank = 300
+
+ func determinePlayerLeague(from rank: Int){
+	switch rank{
+		case 0:
+			print("Play a game")
+		case 1..<50:
+			print("Bronze League")
+		case 50..<100:
+			print("Silver League")
+		case 100..<350:
+			print("Gold League")
+		default:
+			print("League of your own")
+	}
+ }
+
+ determinePlayerLeague(from: ELORank) // will return Gold League
 ```
