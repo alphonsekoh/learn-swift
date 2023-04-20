@@ -235,3 +235,32 @@ There's special operators like `%` modulo operator gives the remainder. `==` is 
 There's also comparators operators such as `&&` and `||` which means the AND operator and OR operator. AND operator means all conditions have to be true for the code to execute, OR operator means one of the condition can be true for the code to execute.
 
 There's one last important operator called the `?` optional operator which allows the value to be nil. It allows the developer to unwrap the optional.
+
+### Examples of Properly Unwrapping NIL
+
+```swift
+var ages: [Int] = []
+ages.sort()
+
+//if let
+if let oldestAge = ages.last {
+	print("The oldest age is \(oldestAge)")
+} else{
+	print("No oldest age")
+}
+
+// nil coalescing
+let oldestAge = ages.last ?? 999 // default to be 999
+
+// guard statement
+func getOldestAge() {
+	guard let oldestAge = ages.last else{
+		return // gives an early return by checking value upfront
+	}
+	print("\(oldestAge) is the oldest age")
+}
+
+// force unwrap
+let oldestAge = ages.last! // never do this
+// it forces the program to use it and may crash the program.
+```
