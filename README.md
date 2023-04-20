@@ -225,3 +225,13 @@ It is a neater and cleaner way to write a if-else statement.
 
  determinePlayerLeague(from: ELORank) // will return Gold League
 ```
+
+### Swift Operators
+
+There are multiple operators in Swift. `+` is the addition operator, `-` is the subtraction operator, `*` is the multiplication operator and `/` is the division operator. One thing to note about Math operator are its data type whether it's a Int or a Float/Double especially when it comes with division.
+
+There's special operators like `%` modulo operator gives the remainder. `==` is a comparator operator which evaluates the 2 values whether its true or false. There's also `!` operator which negates the conditional from true to false, It can also be appended to become `!=` operator stating "not equals to".
+
+There's also comparators operators such as `&&` and `||` which means the AND operator and OR operator. AND operator means all conditions have to be true for the code to execute, OR operator means one of the condition can be true for the code to execute.
+
+There's one last important operator called the `?` optional operator which allows the value to be nil. It allows the developer to unwrap the optional.
